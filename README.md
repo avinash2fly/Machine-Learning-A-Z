@@ -3,7 +3,7 @@
 ## Data Pre-processing
 
 Learn about data pre-processing for Common machine learning algorithm, as pre-processing is the crucial step in any machine learning algorithm to standardize our data.
-[/tree/master/Part%201%20-%20Data%20Preprocessing](other_file.md)
+[Part 1 - Data Preprocessing](/Part%201%20-%20Data%20Preprocessing)
 
 ## Regression
 
