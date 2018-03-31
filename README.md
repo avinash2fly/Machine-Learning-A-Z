@@ -7,4 +7,8 @@ Learn about data pre-processing for Common machine learning algorithm, as pre-pr
 
 ## Regression
 
+### Simple Linear Regression
+
+[Simple Linear Regression](Section%204%20-%20Simple%20Linear%20Regression/Readme.md)
+
 _**work in progress...**_
