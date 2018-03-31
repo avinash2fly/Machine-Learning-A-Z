@@ -19,10 +19,20 @@ X[:, 1:3] = imputer.transform(X[:, 1:3])
 # Encoding categorical data
 # Encoding the Independent Variable
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+
 labelencoder_X = LabelEncoder()
+
+# create a label for first column
+# replaces category name to number
 X[:, 0] = labelencoder_X.fit_transform(X[:, 0])
+
+# Now as the column names are number, it should not think that one category is greater than other.
+# therefore we will use onhotencoder to map it to dummy variable feature category.
+#  adn changes from one column to 3 column as germany, spain and france.
 onehotencoder = OneHotEncoder(categorical_features = [0])
+
 X = onehotencoder.fit_transform(X).toarray()
+
 # Encoding the Dependent Variable
 labelencoder_y = LabelEncoder()
 y = labelencoder_y.fit_transform(y)
