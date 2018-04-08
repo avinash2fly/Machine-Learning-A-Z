@@ -7,8 +7,8 @@ import pandas as pd
 
 # Importing the dataset
 dataset = pd.read_csv('Salary_Data.csv')
-X = dataset.iloc[:, :-1].values
-y = dataset.iloc[:, 1].values
+X = dataset.iloc[:, :-1].values # independent variable
+y = dataset.iloc[:, 1].values # dependent variable
 
 # Splitting the dataset into the Training set and Test set
 from sklearn.cross_validation import train_test_split
@@ -32,6 +32,7 @@ y_pred = regressor.predict(X_test)
 
 # Visualising the Training set results
 plt.scatter(X_train, y_train, color = 'red')
+# it won't be y_pred, because we are plottinh w.r.t training data
 plt.plot(X_train, regressor.predict(X_train), color = 'blue')
 plt.title('Salary vs Experience (Training set)')
 plt.xlabel('Years of Experience')
